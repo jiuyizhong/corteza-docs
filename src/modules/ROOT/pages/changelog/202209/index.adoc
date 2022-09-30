@@ -1,0 +1,44 @@
+include::ROOT:partial$variables.adoc[]
+
+[#2022-9-x]
+= `2022.9`
+
+With {PRODUCT_NAME} `2022.9`, we continue to improve system stability, security, performance, as well as focusing on features to help organizations conform to *data* privacy *policies and regulations*.
+
+*{PRODUCT_NAME} Privacy*
+
+*{PRODUCT_NAME} privacy* provides a set of features to help organizations conform to data privacy policies and regulations.
+With {PRODUCT_NAME} privacy we aim to streamline the process of handling different data privacy regulations for low-code applications built with {PRODUCT_NAME}.
+
+We introduce *sensitivity levels* which allow the administrators to classify *what data is sensitive* and and on what *level it should be treated as*; the *privacy console* which allows the users to *overview* their data and *request modifications*; and the *data officer privacy console* which allows the *data privacy officers* to manage the user submitted privacy requests.
+
+*Redefined record storage*
+
+{PRODUCT_NAME} `2022.9` redefines how data is stored internally to improve *performance, scalability, and flexibility*.
+{PRODUCT_NAME} now supports the administrators to define *external databases*, as well as configure *dedicated, stand-alone* data *storage locations* for modules.
+
+*Record revisions*
+
+{PRODUCT_NAME} now supports the administrators to configure the {APP_NAME_COMPOSE} modules to *keep track of the changes* of their records.
+The changes are tracked by introducing a revision number, as well as providing a complete history of changes for each record.
+
+[NOTE]
+====
+Only changes done from the `2022.9.0` version onwards are tracked.
+The pre-defined records are considered to the first revision.
+====
+ 
+*Permission debugging*
+
+To simplify the access control configuration process for different user roles, we introduced a new *permission debugger* which allows the administrators to check if the resulting access control equals to the expected one.
+The permission debugger is available in all of the permission configuration modal windows, as well as the {PRODUCT_NAME} {APP_NAME_ADMIN}'s general component permissions.
+
+.[#2022_9-important]#<<2022_9-important,Important upgrade notes:>>#
+* The {PRODUCT_NAME} {APP_NAME_REPORTER}'s `Group` step changed to `Aggregate`, the old `Join` step changed to `Link` and a new `Join` step was added.
+* The {PRODUCT_NAME} {APP_NAME_REPORTER}'s `date()` expression function changed to return the entire *date without time* (the previous version returned the day number), and added a new `day()` function to retrieve the day number.
+
+:leveloffset: +1
+
+include::00.adoc[]
+
+:leveloffset: -1
